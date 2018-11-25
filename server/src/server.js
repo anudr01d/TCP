@@ -14,10 +14,9 @@ let config = require('./shared/config/config');
  */
 
 //let port = normalizePort(process.env.PORT || 3000);//(config.express.port || 3000);
-const PORT = process.env.PORT || '0,0,0,0';
+const port = process.env.PORT || '0,0,0,0';
 
-
-app.set('port', PORT);
+app.set('port', port);
 
 /**
  * Create HTTP server.
@@ -29,7 +28,7 @@ let server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(PORT);
+server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
