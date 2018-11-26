@@ -10,9 +10,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
+
 // compresses files for response, gzip
 app.use(compression());
 require('./shared/database'); // database make connection
+
 // set public path for client side
 app.use(express.static(path.join(__dirname, '../client_dist')));
 

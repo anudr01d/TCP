@@ -13,8 +13,8 @@ let config = require('./shared/config/config');
  * Get port from environment and store in Express.
  */
 
-//let port = normalizePort(process.env.PORT || 3000);//(config.express.port || 3000);
-const port =  '0.0.0.0' || process.env.PORT;
+let port = normalizePort(config.express.port || 3000);
+//const port =  process.env.PORT || '3000';
 
 app.set('port', port);
 
