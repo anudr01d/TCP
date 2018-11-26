@@ -5,7 +5,8 @@
 	"scripts": {
 		"install_packages": "npm install && concurrently \"cd ./client && npm install\" \"cd ./server && npm install\" ",
 		"prestart": "npm run install_packages",
-		"start": "concurrently \"npm run build:client:dev\" \"npm run start:backend\" ",
+		"start": "npm run build:client:dev",
+		"postinstall": "npm run start:backend",
 		"start:backend": "cd ./server && npm start && cd ..",
 		"build": "npm run build:client:prod",
 		"build:client:dev": "cd ./client && npm run build:dev && cd ..",
