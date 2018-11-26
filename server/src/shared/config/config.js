@@ -10,7 +10,7 @@ config.rootServerDirectory = rootDir;
 config.productionEnvironment = false;
 
 config.express = {
-	port: process.env.PORT || '3000',
+	port: process.env.PORT || '0.0.0.0',
 	host: 'localhost'
 };
 
