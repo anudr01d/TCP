@@ -19,7 +19,7 @@ config.security = {
 	tokenExpiry: (1 * 30 * 1000 * 60), // 1 hour
 	saltRounds: 10,
 	issuer: 'mm.mm.mm',
-	audience: 'hb.ca',
+	audience: 'mm.mm',
 };
 
 config.mongodb = {
