@@ -18,7 +18,7 @@ config.security = {
 	privateKey: process.env.APP_SECURITY_PRIVATE_KEY || 'anythingCanBeUsedHere',
 	tokenExpiry: (1 * 30 * 1000 * 60), // 1 hour
 	saltRounds: 10,
-	issuer: 'accounts.hb.ca',
+	issuer: 'mm.mm.mm',
 	audience: 'hb.ca',
 };
 
