@@ -14,7 +14,7 @@ let config = require('./shared/config/config');
  */
 
 //let port = normalizePort(process.env.PORT || 3000);//(config.express.port || 3000);
-const port =  process.env.PORT || 3000;
+const port =  process.env.PORT || '0.0.0.0';
 
 app.set('port', port);
 
